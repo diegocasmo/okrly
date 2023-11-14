@@ -11,3 +11,32 @@ Personal Goals, Simplified.
   - `asdf plugin add postgres`
   - `asdf plugin add nodejs`
 - Run `asdf install`
+- Create a `config/dev.secret.exs` file and configure your database credentials:
+
+``` exs
+# config/dev.secret.exs
+
+import Config
+
+config :okrly, Okrly.Repo,
+  username: "your_username",
+  password: "your_password",
+  database: "your_dev_database",
+  hostname: "localhost",
+```
+- Install dependencies:
+
+```bash
+mix deps.get
+```
+- Create and migrate the database:
+
+```bash
+mix ecto.create
+mix ecto.migrate
+```
+- Start the Phoenix server:
+
+```bash
+mix phx.server
+```
