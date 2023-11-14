@@ -4,39 +4,45 @@ Personal Goals, Simplified.
 
 ## Installation
 
-- Install [asdf](https://github.com/asdf-vm/asdf)
-- Install `asdf` plugins
+- **Install asdf:**
+  - [asdf](https://github.com/asdf-vm/asdf)
+
+- **Install asdf plugins:**
   - `asdf plugin add erlang`
   - `asdf plugin add elixir`
   - `asdf plugin add postgres`
   - `asdf plugin add nodejs`
-- Run `asdf install`
-- Create a `config/dev.secret.exs` file and configure your database credentials:
 
-``` exs
-# config/dev.secret.exs
+- **Run asdf install:**
+  ```bash
+  asdf install
+  ```
 
-import Config
+- **Create a `config/dev.secret.exs` file and configure your database credentials:**
+  ```elixir
+  # config/dev.secret.exs
 
-config :okrly, Okrly.Repo,
-  username: "your_username",
-  password: "your_password",
-  database: "your_dev_database",
-  hostname: "localhost",
-```
-- Install dependencies:
+  import Config
 
-```bash
-mix deps.get
-```
-- Create and migrate the database:
+  config :okrly, Okrly.Repo,
+    username: "your_username",
+    password: "your_password",
+    database: "your_dev_database",
+    hostname: "localhost",
+  ```
 
-```bash
-mix ecto.create
-mix ecto.migrate
-```
-- Start the Phoenix server:
+- **Install dependencies:**
+  ```bash
+  mix deps.get
+  ```
 
-```bash
-mix phx.server
-```
+- **Create and migrate the database:**
+  ```bash
+  mix ecto.create
+  mix ecto.migrate
+  ```
+
+- **Start the Phoenix server:**
+  ```bash
+  mix phx.server
+  ```
