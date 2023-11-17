@@ -1,4 +1,4 @@
-defmodule OkrlyWeb.UserResetPasswordLive do
+defmodule OkrlyWeb.Auth.UserResetPasswordLive do
   use OkrlyWeb, :live_view
 
   alias Okrly.Accounts

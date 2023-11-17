@@ -1,4 +1,4 @@
-defmodule OkrlyWeb.UserSettingsLive do
+defmodule OkrlyWeb.Auth.UserSettingsLive do
   use OkrlyWeb, :live_view
 
   alias Okrly.Accounts

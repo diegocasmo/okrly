@@ -1,4 +1,4 @@
-defmodule OkrlyWeb.UserLoginLive do
+defmodule OkrlyWeb.Auth.UserLoginLive do
   use OkrlyWeb, :live_view
 
   def render(assigns) do

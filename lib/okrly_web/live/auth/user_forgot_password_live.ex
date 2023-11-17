@@ -1,4 +1,4 @@
-defmodule OkrlyWeb.UserForgotPasswordLive do
+defmodule OkrlyWeb.Auth.UserForgotPasswordLive do
   use OkrlyWeb, :live_view
 
   alias Okrly.Accounts

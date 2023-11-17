@@ -1,4 +1,4 @@
-defmodule OkrlyWeb.UserConfirmationLive do
+defmodule OkrlyWeb.Auth.UserConfirmationLive do
   use OkrlyWeb, :live_view
 
   alias Okrly.Accounts

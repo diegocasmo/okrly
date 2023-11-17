@@ -1,4 +1,4 @@
-defmodule OkrlyWeb.UserLoginLiveTest do
+defmodule OkrlyWeb.Auth.UserLoginLiveTest do
   use OkrlyWeb.ConnCase
 
   import Phoenix.LiveViewTest
