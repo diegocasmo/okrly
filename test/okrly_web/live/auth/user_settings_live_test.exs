@@ -1,4 +1,4 @@
-defmodule OkrlyWeb.UserSettingsLiveTest do
+defmodule OkrlyWeb.Auth.UserSettingsLiveTest do
   use OkrlyWeb.ConnCase
 
   alias Okrly.Accounts
