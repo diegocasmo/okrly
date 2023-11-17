@@ -1,4 +1,4 @@
-defmodule OkrlyWeb.ProjectsLive do
+defmodule OkrlyWeb.ProjectIndexLive do
   use OkrlyWeb, :live_view
 
   def render(assigns) do

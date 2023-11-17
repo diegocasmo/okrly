@@ -55,7 +55,7 @@ defmodule OkrlyWeb.Router do
 
     live_session :require_authenticated_user,
       on_mount: [{OkrlyWeb.UserAuth, :ensure_authenticated}] do
-      live "/", ProjectsLive, :projects
+      live "/", ProjectIndexLive, :index
       live "/users/settings", Auth.UserSettingsLive, :edit
       live "/users/settings/confirm_email/:token", Auth.UserSettingsLive, :confirm_email
     end
