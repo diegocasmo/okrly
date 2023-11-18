@@ -28,7 +28,7 @@ Personal Goals, Simplified.
     username: "your_username",
     password: "your_password",
     database: "your_dev_database",
-    hostname: "localhost",
+    hostname: "localhost"
   ```
 
 - **Install dependencies:**
