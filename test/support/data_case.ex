@@ -24,6 +24,8 @@ defmodule Okrly.DataCase do
       import Ecto.Changeset
       import Ecto.Query
       import Okrly.DataCase
+      import Okrly.AccountsFixtures
+      import Okrly.ProjectsFixtures
     end
   end
 

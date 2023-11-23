@@ -7,7 +7,7 @@ defmodule Okrly.Projects.Project do
     field :description, :string
     field :start_date, :date
     field :end_date, :date
-    field :user_id, :id
+    belongs_to :user, Okrly.Accounts.User
 
     timestamps(type: :utc_datetime)
   end

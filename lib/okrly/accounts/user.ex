@@ -7,6 +7,7 @@ defmodule Okrly.Accounts.User do
     field :password, :string, virtual: true, redact: true
     field :hashed_password, :string, redact: true
     field :confirmed_at, :naive_datetime
+    has_many :projects, Okrly.Projects.Project
 
     timestamps(type: :utc_datetime)
   end
